@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Exercicio2 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        
+        System.out.print("Digite o código do item (1 - 5): ");
+        int i = in.nextInt();
+        
+        switch (i) {
+            case 1:
+                System.out.println("Item: Cachorro Quente. Valor: R$8,00.");
+                break;
+            case 2:
+                System.out.println("Item: Cheese Burguer. Valor: R$12,00.");
+                break;
+            case 3:
+                System.out.println("Item: X-Salada. Valor: R$15,00.");
+                break;
+            case 4:
+                System.out.println("Item: Misto Quente. Valor: R$11,00.");
+                break;
+            case 5:
+                System.out.println("Item: Pão na Chapa. Valor: R$6,00.");
+                break;
+            default:
+                System.out.println("Valor inválido.");
+                break;
+        }
+        
+        in.close();
+    }
+}
+
